@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	.operator{
+		padding: 2px;
+		margin-left:15px; 
+		transition-duration: 0.4s; /* Safari */
+  		transition-duration: 0.4s;
+			
+	}
+	
+	.operator:hover {
+  		background-color: green; 
+		color: white;
+		transform: scale(1.35); 
+	}
+
+	input{
+		outline:50px;
+		border:none;
+		color:white;
+		background-color:black;
+		border-radius:25%;
+		width:20px;
+		height:20px;
+		float: none;
+		font-size:10pt;
+		padding:10px;
+		margin:10px;
+		text-align: center;
+		
+	
+}
+	.button{
+		background-color: #696969;
+		transition-duration: 0.4s; /* Safari */
+  		transition-duration: 0.4s;
+			
+	}
+
+	.button:hover {
+  		background-color: orange; 
+  		color: white;
+		transform: scale(1.253); 
+}
+	#display{
+		width: 216px;
+		height: 80px;
+		border-radius: 12px;
+		font-size: 50pt; 
+		text-align: right;
+	
+	}
+	#equals{
+		text-align: center;
+		width: 235px;
+		height: 45px;
+		border-radius:12px;
+		transition-duration: 0.4s; /* Safari */
+  		transition-duration: 0.4s;
+		
+				
+	}
+	#equals:hover {
+  		background-color: green; 
+		color: white;
+		transform: scale(1.035); 
+	}
+	
+	
+	#myCalculator{
+		background-color:#808080;
+		border:#A9A9A9 black 3pt;
+		border-radius: 15pt;
+		width: 256px;
+		padding: 10px 3px 10px 3px;
+	}
+	
+	#clear{
+		transition-duration: 0.4s; /* Safari */
+  		transition-duration: 0.4s;
+		
+	}
+	#clear:hover {
+  		background-color: blue; 
+  		color: white;
+		transform: scale(1.253); 
+}
+	
+	
+</style>
+	
+<meta charset="UTF-8">
+<title>Calculator.html</title>
+</head>
+
+<body>
+<form name="calculator">
+	
+<div id="myCalculator">
+	
+<div id="top_display"> 
+	<input type="type" name="display" id="display" disabled>
+</div>
+	
+<div class="inputRow">
+	<input type="button" class="operator" name="divide" value="÷" onclick="calculator.display.value+='/'">
+	<input type="button" class="operator" name="subtract" value="-" onclick="calculator.display.value+='-'">
+	<input type="button" class="operator" name="add" value="+" onclick="calculator.display.value+='+'">
+	<input class="operator" type="button" name="multiplication" value="x" onclick="calculator.display.value+='*'">
+	
+</div>
+	
+	
+<div class="inputRow2">
+	<input class="button" name="one" value="1" onclick="calculator.display.value+='1'">
+	<input class="button" name="two" value="2" onclick="calculator.display.value+='2'">
+	<input class="button" name="three" value="3" onclick="calculator.display.value+='3'">
+	<input class="button" name="decimal" value="." onclick="calculator.display.value+='.'">
+
+</div>
+	
+<div class="inputRow3">
+	<input class="button" name="four" value="4" onclick="calculator.display.value+='4'">
+	<input class="button" name="five" value="5" onclick="calculator.display.value+='5'">
+	<input class="button" name="six" value="6" onclick="calculator.display.value+='6'">
+
+</div>
+	
+<div class="inputRow4">
+	<input class="button" name="seven" value="7" onclick="calculator.display.value+='7'">
+	<input class="button" name="eight" value="8" onclick="calculator.display.value+='8'">
+	<input class="button" name="nine" value="9" onclick="calculator.display.value+='9'">
+	<input id="clear" name="clear" value="c" onclick="calculator.display.value=''">
+	
+</div>
+	
+	
+<div class="inputRow5">
+	
+<input id="equals" type="button" name="equals"value="=" onclick="calculator.display.value=eval(calculator.display.value)">	
+</div>
+	</div>
+	
+</form>
+	
+</body>
+</html>
+	
+	
