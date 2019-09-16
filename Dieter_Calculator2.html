@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	
+	body{
+		background: #F79A6F;
+		margin:0;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	}
+
+	input{
+		outline:50px;
+		border:none;
+		color:white;
+		background-color:none;
+		width:20px;
+		height:20px;
+		float: none;
+		font-size:10pt;
+		padding:10px;
+		margin-top:50px;
+		text-align: center;
+		
+	
+}
+	
+		
+	#display{
+		background-color:#E6E6E6;
+		color:#7D7471;
+		width:416px;
+		height: 390px;
+		float: left;
+		margin-left: 350px;
+		margin-top: 250px;
+		font-size:120pt;
+		text-align:right;
+		padding-top: 270px;
+		padding-right:20px;
+	}
+	
+	 .operator{
+		display: inline-block;
+		background-color: orange;
+		text-align:center;
+		Line-height:205px;
+		width: 10px;
+		height: 10px;
+		border-radius: 205px;
+		margin:25px;
+		transition-duration: 0.4s; 
+  		transition-duration: 0.4s;
+	}
+	.operator:hover {
+  		background-color: green; 
+		color: white;
+		transform: scale(1.25); 
+	}
+
+	.button{
+		display: inline-block;
+		background-color: #ddd;
+		text-align:center;
+		Line-height:205px;
+		width: 10px;
+		height: 10px;
+		border-radius: 205px;
+		margin:25px;
+		transition-duration: 0.4s; 
+  		transition-duration: 0.4s;
+		
+		}
+	.button:hover {
+  		background-color: blue; 
+		color: white;
+		transform: scale(1.35); 
+	}
+	
+	#button2{
+		display: inline-block;
+		background-color: #F77F43;
+		text-align:center;
+		Line-height:205px;
+		width: 175px;
+		height: 10px;
+		border-radius: 205px;
+		margin:25px;
+		transition-duration: 0.4s; 
+  		transition-duration: 0.4s;
+		
+	}
+	
+	#button2:hover {
+  		background-color: green; 
+		color: white;
+		transform: scale(1.25); 
+	}
+	
+	#clear{
+		display: inline-block;
+		background-color: #F77F43;
+		text-align:center;
+		Line-height:205px;
+		width: 10px;
+		height: 10px;
+		border-radius: 205px;
+		margin:20px;
+		transition-duration: 0.4s; 
+  		transition-duration: 0.4s;
+		}
+	#clear:hover {
+  		background-color: red; 
+		color: white;
+		transform: scale(1.35);
+	}
+	
+	
+	#keyboard_display{
+		margin-top: 250px;
+		margin-right:439px;
+		margin-bottom:460px;
+		float: right;
+		background-color: #C7C7C7;
+		height:514px;
+		width:425px;
+		padding-bottom: 0px;
+		padding-left: 20px;
+		padding-top:156px;
+		
+		}
+	
+	.firstsquare{
+		background-color: #C7C7C7;
+		height: 100%;
+		width: 796px;
+		position:fixed;
+		z-index: -1;
+		
+	}
+	
+	.label{
+		color:#E6E6E6;
+	}
+	
+
+		
+	
+
+	
+	
+</style>
+	
+<meta charset="UTF-8">
+<title>Calculator.html</title>
+</head>
+
+<body>
+<form name="calculator">
+	
+<div id="myCalculator">
+	
+<div id="top_display"> 
+	<input type="type" name="display" id="display" disabled>
+</div>
+<div id="keyboard_display"> 
+<div class="inputRow">
+		<input class="operator" name="divide" value="÷" onclick="calculator.display.value+='/'">
+		<input class="operator" name="subtract" value="-" onclick="calculator.display.value+='-'">
+		<input class="operator" name="add" value="+" onclick="calculator.display.value+='+'">
+		<input class="operator"  name="multiplication" value="x" onclick="calculator.display.value+='*'">
+</div>
+
+<div class="inputRow">
+		<input class="button" name="nine" value="9" onclick="calculator.display.value+='9'">
+		<input class="button" name="eight" value="8" onclick="calculator.display.value+='8'">
+		<input class="button" name="seven" value="7" onclick="calculator.display.value+='7'">
+		<input class="button" name="decimal" value="." onclick="calculator.display.value+='.'">
+	
+</div>
+
+
+<div class="inputRow">
+		<input class="button" name="six" value="6" onclick="calculator.display.value+='6'">
+		<input class="button" name="five" value="5" onclick="calculator.display.value+='5'">
+		<input class="button" name="four" value="4" onclick="calculator.display.value+='4'">
+</div>
+	
+<div class="inputRow">
+	<input class="button" name="three" value="3" onclick="calculator.display.value+='3'">
+	<input class="button" name="two" value="2" onclick="calculator.display.value+='2'">
+	<input class="button" name="one" value="1" onclick="calculator.display.value+='1'">	
+	<input id="clear" name="clear" value="c" onclick="calculator.display.value=''">
+</div>
+	
+<div class="inputRow">
+	<input class="button" name="zero" value="0" onclick="calculator.display.value+='0'">
+	<input id="button2" name="equals" value="=" onclick="calculator.display.value=eval(calculator.display.value)">
+	
+	
+</div>
+</div>
+
+</div>
+<div class="firstsquare">
+</div>
+<div class="label">Html Calculator by: Daniel Giraldo<br>Inspired by Dieter Rams</div>
+	
+</form>
+	
+</body>
+</html>
+	
+	
