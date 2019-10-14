@@ -1,0 +1,570 @@
+<!doctype html>
+<html>
+<style>
+	
+
+	
+.head{
+	margin-top:110px;
+	width: 670px;
+    height: 550px;
+    background: #FFE9CD;
+	border-radius: 800px / 650px;
+	transform:rotate(90deg);
+	border:solid black .75pt;
+	postion:absolute;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 8s;
+	animation-iteration-count: infinite;
+	
+	}
+	
+#mouth{
+	width: 90px;
+    height: 95px;
+    background: white;
+    border-radius: 50px / 50px;
+	border:solid black .75pt;
+	margin-left:285px;
+	position:absolute;
+	margin-top:-130px;
+	
+	
+	}
+	
+.baseline{
+		border-top: solid black .75pt;
+		margin-top: 50px;
+		
+	}
+	
+.centerline{
+		border-left: solid black .75pt;
+		height: 96px;
+		margin-top:-51px;
+		margin-left:45px;
+		postion:absolute;
+		}
+	
+.leftline{
+		border-left:solid black .75pt;
+		height:75px;
+		margin-top:-87px;
+		margin-left:17px;
+		position:absolute;
+		}
+	
+.rightline{
+		border-left:solid black .75pt;
+		height:75px;
+		margin-top:-87px;
+		margin-left:73px;
+		}
+	
+#nose{
+		margin-top:20px;
+	}
+	
+	
+.bridge{
+		width: 150px;
+      	height: 75px;
+      	background: #E0CEB6;
+     	border-radius: 100px / 50px;
+		border:solid black .75pt;
+		transform:rotate(90deg);	
+		margin-top:-330px;
+		margin-left:255px;
+		postion:absolute;
+		-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 8s;
+	animation-iteration-count: infinite;
+		}
+.tip{
+		width: 90px;
+      	height: 50px;
+      	background: #E0CEB6;
+     	border-radius: 100px / 59px;
+		border-top:solid black .75pt;
+		border-right:solid black .75pt;
+		border-left:solid black .75pt;
+		transform:rotate(0deg);	
+		margin-top:-40px;
+		margin-left:285px;	
+		position: absolute;
+		-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 8s;
+	animation-iteration-count: infinite;
+		}
+.rightnostril{
+		width: 60px;
+      	height: 50px;
+      	background: #E0CEB6;
+     	border-radius: 100px / 86px;
+		border:solid black .75pt;
+		transform:rotate(135deg);	
+		margin-top:-20px;
+		margin-left:340px;	
+		position:absolute;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 8s;
+	 animation-iteration-count: infinite;
+	
+		}
+
+.leftnostril{
+		width: 60px;
+      	height: 50px;
+      	background: #E0CEB6;
+     	border-radius: 100px / 86px;
+		border:solid black .75pt;
+		transform:rotate(45deg);	
+		margin-top:-20px;
+		margin-left:266px;	
+		position:absolute;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 8s;
+	 animation-iteration-count: infinite;
+		}
+	
+.righthole{
+		width: 35px;
+      	height: 30px;
+      	background: black;
+     	border-radius: 100px / 86px;
+		border:solid black .75pt;
+		transform:rotate(135deg);	
+		margin-top:0px;
+		margin-right:1280px;
+		float:right;
+	}
+	
+.leftthole{
+		width: 35px;
+      	height: 30px;
+      	background: black;
+     	border-radius: 100px / 86px;
+		border:solid black .75pt;
+		transform:rotate(45deg);	
+		margin-top:0px;
+		margin-left:286px;
+		position:absolute;
+		float:left;
+	}
+
+.righteye{
+		width: 70px;
+    	height: 110px;
+    	background: white;
+		transform:rotate(90deg);
+    	border-radius: 50px / 80px;
+		border:solid black .75pt;
+		margin-left:410px;
+		position:absolute;
+		margin-top:-180px;
+		float:right;
+	}
+	
+.lefteye{
+		width: 70px;
+    	height: 110px;
+    	background: white;
+		transform:rotate(90deg);
+    	border-radius: 50px / 80px;
+		border:solid black .75pt;
+		margin-left:180px;
+		position:absolute;
+		margin-top:-180px;
+		float:left;
+	}
+	
+	
+	
+.Ltopeyelid{
+		width: 140px;
+    	height: 40px;
+    	background: #FFE9CD;
+		transform:rotate(5deg);
+    	border-top-right-radius: 290px;
+		border-top-left-radius: 290px;
+		border:solid black .75pt;
+		margin-left:145px;
+		position:absolute;
+		margin-top:-170px;
+		float:left;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 8s;
+	 animation-iteration-count: infinite;
+	}
+	
+.Liris{
+		width: 35px;
+    	height: 35px;
+    	background: green;
+		transform:rotate(90deg);
+    	border-radius: 50px / 50px;
+		border:solid black .75pt;
+		margin-left:205px;
+		position:absolute;
+		margin-top:-125px;
+		float:left;
+	
+	
+	}
+
+.Lpupil{
+		width: 20px;
+    	height: 20px;
+    	background: black;
+		transform:rotate(90deg);
+    	border-radius: 50px / 50px;
+		border:solid black .75pt;
+		margin-left:212px;
+		position:absolute;
+		margin-top:-117px;
+		float:left;	
+	}
+	
+.Lbottomeyelid{
+		width: 140px;
+    	height: 40px;
+    	background: #FFE9CD;
+		transform:rotate(-185deg);
+    	border-top-right-radius: 290px;
+		border-top-left-radius: 290px;
+		border:solid black .75pt;
+		margin-left:147px;
+		position:absolute;
+		margin-top:-105px;
+		float:left;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+	animation-duration: 8s;
+	 animation-iteration-count: infinite;
+	}
+	
+.Leyebrow{
+		width: 140px;
+    	height: 20px;
+    	background: black;
+		transform:rotate(13deg);
+    	border-top-right-radius: 300px;
+		border-top-left-radius: 300px;
+		margin-left:145px;
+		position:absolute;
+		margin-top:-180px;
+		float:left;
+	
+	}
+	
+.Rtopeyelid{
+		width: 140px;
+    	height: 40px;
+    	background: #FFE9CD;
+		transform:rotate(-5deg);
+    	border-top-right-radius: 290px;
+		border-top-left-radius: 290px;
+		border:solid black .75pt;
+		margin-left:375px;
+		position:absolute;
+		margin-top:-170px;
+		float:right;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 8s;
+	 animation-iteration-count: infinite;
+	
+	}
+	
+	
+.Riris{
+		width: 35px;
+    	height: 35px;
+    	background: green;
+		transform:rotate(90deg);
+    	border-radius: 50px / 50px;
+		border:solid black .75pt;
+		margin-left:420px;
+		position:absolute;
+		margin-top:-125px;
+		float:right;	
+		
+		
+	}
+	
+.Rpupil{
+		width: 20px;
+    	height: 20px;
+    	background: black;
+		transform:rotate(90deg);
+    	border-radius: 50px / 50px;
+		border:solid black .75pt;
+		margin-left:427px;
+		position:absolute;
+		margin-top:-117px;
+		float:right;	
+		
+	}
+	
+.RBottomEyelid{
+		width: 140px;
+    	height: 40px;
+    	background: #FFE9CD;
+		transform:rotate(-175deg);
+    	border-top-right-radius: 290px;
+		border-top-left-radius: 290px;
+		border:solid black .75pt;
+		margin-left:375px;
+		position:absolute;
+		margin-top:-105px;
+		float:right;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 8s;
+	 animation-iteration-count: infinite;
+	}
+	
+.Reyebrow{
+		width: 140px;
+    	height: 20px;
+    	background: black;
+		transform:rotate(-14deg);
+    	border-top-right-radius: 300px;
+		border-top-left-radius: 300px;
+		margin-left:375px;
+		position:absolute;
+		margin-top:-180px;
+		float:right;
+		
+	}
+	
+	
+.leftstache{
+		width: 135px;
+      	height: 20px;
+      	background: black;
+     	border-radius: 150px / 36px;
+		border:solid black .75pt;
+		transform:rotate(150deg);	
+		margin-top:90px;
+		margin-left:195px;
+		position:absolute;
+		float:left;
+	}
+	
+	
+.rightstache{
+		width: 135px;
+      	height: 20px;
+      	background: black;
+     	border-radius: 150px / 36px;
+		border:solid black .75pt;
+		transform:rotate(30deg);	
+		margin-top:90px;
+		margin-left:335px;
+		position:absolute;
+		float:right;
+	}
+	
+	
+.Lcrease{
+		width: 120px;
+		border-top:solid black .75pt;
+		margin-left:185px;
+		position:absolute;
+		margin-top:-260px;
+		
+	}	
+
+.Bcrease{
+		width: 90px;
+		border-top:solid black .75pt;
+		margin-left:285px;
+		position:absolute;
+		margin-top:-220px;
+		
+	}	
+
+
+.Rcrease{
+		width: 100px;
+		border-top:solid black .75pt;
+		margin-left:345px;
+		position:absolute;
+		margin-top:-260px;
+		transform:rotate(-15deg);	
+	}
+	
+	
+	
+.Rcheek{
+		width: 70px;
+    	height: 140px;
+    	background: #FFE9CD;
+		transform:rotate(-25deg);
+    	border-radius: 50px / 90px;
+		border-right:solid black .75pt;
+		margin-left:410px;
+		position:absolute;
+		margin-top:-45px;
+		float:right;	
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 8s;
+	 animation-iteration-count: infinite;
+		
+	}
+	
+.Lcheek{
+		
+		width: 70px;
+    	height: 140px;
+    	background: #FFE9CD;
+		transform:rotate(25deg);
+    	border-radius: 50px / 90px;
+		border-left:solid black .75pt;
+		margin-left:180px;
+		position:absolute;
+		margin-top:-45px;
+		float:right;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 8s;
+	 animation-iteration-count: infinite;
+	}
+	
+.Lear{
+		width: 120px;
+    	height: 200px;
+      	background: #FFE9CD;
+     	border-radius: 110px / 160px;
+		margin-top:-100px;
+		border-left:solid black .75pt;
+		margin-left:20px;
+		postion:absolute;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 8s;
+	 animation-iteration-count: infinite;
+		
+		
+	}
+	
+.Rear{	
+		width: 120px;
+    	height: 200px;
+      	background: #FFE9CD;
+     	border-radius: 110px / 160px;
+		margin-top:-200px;
+		border-right:solid black .75pt;
+		margin-left:525px;
+		postion:absolute;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 8s;
+animation-iteration-count: infinite;
+	
+		
+	}
+	
+	
+	
+
+
+@-webkit-keyframes example {
+  from {background-color: #FFE9CD;}
+  to {background-color: red;}
+}
+
+	
+
+</style>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+<body>
+	<div class="head"></div>
+	
+	
+<div id="mouth">
+	
+<div class="baseline"></div>
+<div class="centerline"></div>
+<div class="leftline"></div>
+<div class="rightline"></div>
+	
+</div>
+
+<div id="nose">
+	
+<div class="bridge"></div>
+<div class="tip"></div>
+<div class="rightnostril"></div>
+<div class="leftnostril"></div>
+<div class="righthole"></div>
+<div class="leftthole"></div>
+	
+</div>
+	
+<div id="eyline">
+	
+<div class="righteye"></div>
+<div class="lefteye"></div>
+<div class="Rtopeyelid"></div>
+<div class="Riris"></div>
+<div class="Rpupil"></div>
+<div class="RBottomEyelid"></div>
+<div class="Reyebrow"></div>
+<div class="Ltopeyelid"></div>
+<div class="Liris"></div>
+<div class="Lpupil"></div>
+<div class="Lbottomeyelid"></div>
+<div class="Leyebrow"></div>
+	
+</div>
+	
+	
+	
+<div id="forhead">
+	
+<div class="Lcrease"></div>
+<div class="Bcrease"></div>
+<div class="Rcrease"></div>
+	
+	
+</div>
+	
+<div class="Rcheek"></div>
+<div class="Lcheek"></div>
+	
+	
+<div class="leftstache"></div>
+<div class="rightstache"></div>
+	
+<div class="Lear"></div>
+<div class="Rear"></div>
+
+	
+
+</body>
+</html>
