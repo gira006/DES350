@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<style>
+	body{
+		background-color: #E6472E;
+		margin:0px;
+		padding:0px;
+	}
+	
+	.card{
+		position: absolute;
+		left:50%;
+		top:50%;
+		transform: translate(-50%,-50%);
+		width: 40%;
+		height: 90vh;
+		background: url("Badlands_npRGB.jpg") no-repeat center;
+		background-size: contain;
+		
+	}
+	
+	.card:hover{
+		background: url("poster_animation.gif") no-repeat center;
+		background-size: contain;
+	}
+	
+	#preload{
+	background: url("poster_animation.gif") no-repeat -9999px -9999px;
+	}
+</style>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<div id="preload"></div>
+	<div class="card"> </div>
+	
+</body>
+</html>
